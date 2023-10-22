@@ -11,6 +11,8 @@
 		044B49682ADC795E0033EA63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B49672ADC795E0033EA63 /* ContentView.swift */; };
 		044B496A2ADC79600033EA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044B49692ADC79600033EA63 /* Assets.xcassets */; };
 		044B496D2ADC79600033EA63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044B496C2ADC79600033EA63 /* Preview Assets.xcassets */; };
+		04CBF5442ADC816F00B36948 /* model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 04CBF5432ADC816F00B36948 /* model.tflite */; };
+		CD3F609EB9BF3BCAA156113C /* Pods_TFLiteExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC7768604003BCF1E800C3B /* Pods_TFLiteExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,10 @@
 		044B49672ADC795E0033EA63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		044B49692ADC79600033EA63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044B496C2ADC79600033EA63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04CBF5432ADC816F00B36948 /* model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.tflite; sourceTree = "<group>"; };
+		0E7A9E454CCB189761E83A88 /* Pods-TFLiteExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFLiteExample.release.xcconfig"; path = "Target Support Files/Pods-TFLiteExample/Pods-TFLiteExample.release.xcconfig"; sourceTree = "<group>"; };
+		7CC7768604003BCF1E800C3B /* Pods_TFLiteExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFLiteExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09FD90C53B253E5188C53DA /* Pods-TFLiteExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFLiteExample.debug.xcconfig"; path = "Target Support Files/Pods-TFLiteExample/Pods-TFLiteExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3F609EB9BF3BCAA156113C /* Pods_TFLiteExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +44,8 @@
 			children = (
 				044B49642ADC795E0033EA63 /* TFLiteExample */,
 				044B49632ADC795E0033EA63 /* Products */,
+				7759A901E898A347AA1872E8 /* Pods */,
+				779610183A521F81019E86A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +60,7 @@
 		044B49642ADC795E0033EA63 /* TFLiteExample */ = {
 			isa = PBXGroup;
 			children = (
+				04CBF5432ADC816F00B36948 /* model.tflite */,
 				044B49652ADC795E0033EA63 /* TFLiteExampleApp.swift */,
 				044B49672ADC795E0033EA63 /* ContentView.swift */,
 				044B49692ADC79600033EA63 /* Assets.xcassets */,
@@ -67,6 +77,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7759A901E898A347AA1872E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D09FD90C53B253E5188C53DA /* Pods-TFLiteExample.debug.xcconfig */,
+				0E7A9E454CCB189761E83A88 /* Pods-TFLiteExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		779610183A521F81019E86A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CC7768604003BCF1E800C3B /* Pods_TFLiteExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044B49702ADC79600033EA63 /* Build configuration list for PBXNativeTarget "TFLiteExample" */;
 			buildPhases = (
+				08328E47D0D91FBCC6DDCF6B /* [CP] Check Pods Manifest.lock */,
 				044B495E2ADC795E0033EA63 /* Sources */,
 				044B495F2ADC795E0033EA63 /* Frameworks */,
 				044B49602ADC795E0033EA63 /* Resources */,
@@ -127,10 +155,36 @@
 			files = (
 				044B496D2ADC79600033EA63 /* Preview Assets.xcassets in Resources */,
 				044B496A2ADC79600033EA63 /* Assets.xcassets in Resources */,
+				04CBF5442ADC816F00B36948 /* model.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08328E47D0D91FBCC6DDCF6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFLiteExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		044B495E2ADC795E0033EA63 /* Sources */ = {
@@ -266,6 +320,7 @@
 		};
 		044B49712ADC79600033EA63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D09FD90C53B253E5188C53DA /* Pods-TFLiteExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,6 +349,7 @@
 		};
 		044B49722ADC79600033EA63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E7A9E454CCB189761E83A88 /* Pods-TFLiteExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
